@@ -4,6 +4,9 @@ Use it for collecting errors in Console Applications, Web Applications, Web serv
 
 Database Create Script -> DataAccessLayer -> CreateDatabase.sql
 
+Use this to fix NuGet Package
+Update-Package Microsoft.CodeDom.Providers.DotNetCompilerPlatform -r
+
 If problem restor Package:
 
 1) Delete folder "packages"
