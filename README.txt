@@ -15,7 +15,7 @@ If problem restor Package:
 
 2) Run: Install-Package NuGet.CommandLine i Package Manager Console
 
-Soruce: 
+Source: 
 https://stackoverflow.com/questions/38074578/nuget-has-problems-with-missing-packages-how-to-restore
 
 copy/past in to other Applications try catch:
