@@ -1,0 +1,42 @@
+﻿@model IEnumerable<Model.ClsMessageLog>
+
+@{
+    ViewBag.Title = "MessageLog";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>MessageLog</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ApplicationName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MessageTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Message)
+        </th>
+        
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ApplicationName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MessageTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MessageShort)
+        </td>
+        <td>
+            @Html.ActionLink("Details","MessageLogDetails", new { id = item.MessageLogID }, new { @class = "btn btn-success" })
+        </td>
+    </tr>
+}
+
+</table>

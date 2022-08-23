@@ -1,0 +1,42 @@
+﻿@model Model.MessageLog
+
+@{
+    ViewBag.Title = "MessageLogDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>MessageLog Details</h2>
+
+<div>
+    <h4>MessageLog</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ApplicationName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ApplicationName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Message)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Message)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MessageTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MessageTime)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back", "MessageLog", null, new { @class = "btn btn-success" })
+</p>
